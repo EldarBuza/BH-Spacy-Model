@@ -1,0 +1,2 @@
+In order to view the log.txt properly, try downloading it and opening it in full screen, due to the amount of columns, it might look really cluttered.
+Notepad++ is highly recommended to the readability it provides.
