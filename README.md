@@ -76,7 +76,7 @@ Training was performed using GPU acceleration to ensure faster convergence.
 
 ```
 import spacy
-nlp = spacy.load("bs_Model/model-best")
+nlp = spacy.load("bs_model/model-best")
 doc = nlp("Ovo je testna rečenica.")
 for token in doc:
     print(token.text, token.pos_, token.lemma_)
