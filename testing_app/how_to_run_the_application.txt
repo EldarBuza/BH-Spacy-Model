@@ -1,0 +1,10 @@
+Things you need to ensure you have before downloading the application:
+1. Ensure you have spaCy installed via "pip install spacy"
+2. Ensure you have the BS-Model downloaded and that you know what the path to the model is.
+
+How to run the application:
+1. Download the "aplikacija.py" (If needed, change the path to the model in "aplikcija.py" to the BS-Model).
+2. Run it through your PowerShell/Command prompt (on Windows), Terminal (on Linux) by typing "python aplikcija.py"
+3. After a few seconds, the application should be running locally on your IP.
+4. You can access it by just copying the given IP in your terminal and pasting it into your web browser.
+5. Enjoy the application.

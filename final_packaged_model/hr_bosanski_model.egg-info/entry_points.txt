@@ -1,0 +1,2 @@
+[spacy_models]
+hr_bosanski_model = hr_bosanski_model
