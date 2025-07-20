@@ -38,3 +38,48 @@ All datasets were transformed to the Universal Dependencies CONLL-U format and t
 * Attribute Ruler
 
 Each component is built using spaCy’s CNN-based HashEmbedCNN encoder for the tok2vec layer.
+
+
+## Training Details
+
+* Optimizer: Adam with linear learning rate warm-up
+* Learning Rate: 0.00005
+* Warmup Steps: 250
+* Training Steps: 20,000
+* Batch Size: 128
+* Dropout: 0.1
+
+Training was performed using GPU acceleration to ensure faster convergence.
+
+## Evaluation Metrics
+
+<img width="495" height="255" alt="metrics" src="https://github.com/user-attachments/assets/9dcf077d-af79-4c97-b49f-70cb57d55a06" />
+
+## Key Achievements
+
+* Successful adaptation of South Slavic resources for Bosnian NLP
+* Balanced pipeline with good generalization across syntactic and semantic tasks
+* Competitive performance despite limited language resources
+
+## Risks & Considerations
+
+* Lack of large-scale manually annotated Bosnian corpora could affect generalization
+* NER performance is lower due to limited annotated named entities in the source data
+* Ambiguities specific to Bosnian morphology remain a challenge
+
+## How to Use
+
+1. Clone the repository
+2. Install spaCy
+3. Download the model (to be published in dist/ or via spacy package)
+4. Load the model:
+
+```
+import spacy
+nlp = spacy.load("bs_Model/model-best")
+doc = nlp("Ovo je testna rečenica.")
+for token in doc:
+    print(token.text, token.pos_, token.lemma_)
+```
+
+
